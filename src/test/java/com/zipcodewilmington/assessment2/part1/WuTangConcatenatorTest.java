@@ -12,9 +12,9 @@ public class WuTangConcatenatorTest {
         Integer input = 5;
         WuTangConcatenator wtc = new WuTangConcatenator(input);
 
-        boolean isWu = wtc.isWu();
-        boolean isTang = wtc.isTang();
-        boolean isWuTang = wtc.isWuTang();
+        boolean isWu = wtc.isWu(input);
+        boolean isTang = wtc.isTang(input);
+        boolean isWuTang = wtc.isWuTang(input);
 
         Assert.assertFalse(isWu); // multiple of 3
         Assert.assertTrue(isTang); // multiple of 5
@@ -26,9 +26,9 @@ public class WuTangConcatenatorTest {
         Integer input = 3;
         WuTangConcatenator wtc = new WuTangConcatenator(input);
 
-        boolean isWu = wtc.isWu();
-        boolean isTang = wtc.isTang();
-        boolean isWuTang = wtc.isWuTang();
+        boolean isWu = wtc.isWu(input);
+        boolean isTang = wtc.isTang(input);
+        boolean isWuTang = wtc.isWuTang(input);
 
         Assert.assertTrue(isWu); // multiple of 3
         Assert.assertFalse(isTang); // multiple of 5
@@ -41,9 +41,9 @@ public class WuTangConcatenatorTest {
         Integer input = 10;
         WuTangConcatenator wtc = new WuTangConcatenator(input);
 
-        boolean isWu = wtc.isWu();
-        boolean isTang = wtc.isTang();
-        boolean isWuTang = wtc.isWuTang();
+        boolean isWu = wtc.isWu(input);
+        boolean isTang = wtc.isTang(input);
+        boolean isWuTang = wtc.isWuTang(input);
 
         Assert.assertFalse(isWu); // multiple of 3
         Assert.assertTrue(isTang); // multiple of 5
@@ -56,9 +56,9 @@ public class WuTangConcatenatorTest {
         Integer input = 6;
         WuTangConcatenator wtc = new WuTangConcatenator(input);
 
-        boolean isWu = wtc.isWu();
-        boolean isTang = wtc.isTang();
-        boolean isWuTang = wtc.isWuTang();
+        boolean isWu = wtc.isWu(input);
+        boolean isTang = wtc.isTang(input);
+        boolean isWuTang = wtc.isWuTang(input);
 
         Assert.assertTrue(isWu); // multiple of 3
         Assert.assertFalse(isTang); // multiple of 5
@@ -71,9 +71,9 @@ public class WuTangConcatenatorTest {
         Integer input = 15;
         WuTangConcatenator wtc = new WuTangConcatenator(input);
 
-        boolean isWu = wtc.isWu();
-        boolean isTang = wtc.isTang();
-        boolean isWuTang = wtc.isWuTang();
+        boolean isWu = wtc.isWu(input);
+        boolean isTang = wtc.isTang(input);
+        boolean isWuTang = wtc.isWuTang(input);
 
         Assert.assertTrue(isWu); // multiple of 3
         Assert.assertTrue(isTang); // multiple of 5
