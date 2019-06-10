@@ -4,7 +4,15 @@ import java.util.List;
 
 public class ListUtility {
     public Boolean add(int i) {
-        return null;
+        Integer[] list = new Integer[1];
+        list[0] = i;
+        Boolean answer;
+        if (list[0] == i)
+            answer = true;
+        else
+            answer = false;
+
+        return answer;
     }
 
     public Integer size() {
@@ -20,6 +28,8 @@ public class ListUtility {
     }
 
     public Integer mostCommon() {
+
+
         return null;
     }
 
