@@ -38,6 +38,27 @@ public class ArrayUtility {
     }
 
     public Integer mostCommon(Integer[] array) {
-        return null;
+        Arrays.sort(array);
+        int max = 1;
+        int res = array[0];
+        int count = 1;
+
+        for (int i = 1; i < array.length ; i++) {
+            if(array[i] == array[i-1])
+                count++;
+            else{
+                if (count > max){
+                    max = count;
+                    res = array[i-1];
+                }
+                count = 1;
+            }
+        }
+        if (count > max){
+            max = count;
+            res = array[array.length - 1];
+        }
+
+        return res;
     }
 }
